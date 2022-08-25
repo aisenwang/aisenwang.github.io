@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Posts | aisen</title>
+<title>PaperMod | aisen</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - aisen">
+<meta name="description" content="Contains posts related to PaperMod">
 <meta name="author" content="">
-<link rel="canonical" href="https://aisenwang.github.io/post/">
+<link rel="canonical" href="https://aisenwang.github.io/posts/papermod/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.2068759a50238aee83375bc8cb602a1caff7316bea9cc81b83d90aeea0e276c5.css" integrity="sha256-IGh1mlAjiu6DN1vIy2AqHK/3MWvqnMgbg9kK7qDidsU=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://aisenwang.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://aisenwang.github.io/favicon-16x16.png">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://aisenwang.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://aisenwang.github.io/post/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://aisenwang.github.io/posts/papermod/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -104,54 +104,71 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    Posts
+    PaperMod
   </h1>
+  <div class="post-description">
+    Contains posts related to PaperMod
+  </div>
 </header>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Yocto工程记录 NXPIMX6Q
+    <h2>Installation | Update
     </h2>
   </header>
   <div class="entry-content">
-    <p>建立工作目录 新建文件夹作为工作空间，如imx-yocto-bsp-4.9.88
-将 /home/sbs/develop-source/sources-4.9.88-20210403.tar.gz 文件解压到 ~/imx-yocto-bsp-4.9.88 目录下
-将 /home/sbs/develop-source/downloads-4.9.88-20210201.tar.gz 文件解压到 ~/imx-yocto-bsp-4.9.88 目录下
-在 ~/imx-yocto-bsp-4.9.88 目录下新建两个连接文件：
-$ ln -s sources/meta-fsl-bsp-release/imx/tools/fsl-setup-release.sh fsl-setup-release.sh
-$ ln -s sources/base/setup-environment setup-environment
-建立工程目录 DISTRO=fsl-imx-x11 MACHINE=imx6qsabresd source fsl-setup-release.sh -b sevb3732 添加layer bitbake-layers add-layer meta-imx6q 编译系统 清理生成： bitbake fsl-image-qt5-validation-imx -c clean
-编译全部 ：bitbake fsl-image-qt5-validation-imx
-交叉编译链 生成交叉编译链： bitbake fsl-image-qt5-validation-imx -c populate_sdk...</p>
+    <p>Read Install and Update instructions here</p>
   </div>
-  <footer class="entry-footer"><span title='2022-08-25 09:49:33 +0800 CST'>August 25, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Yocto工程记录 NXPIMX6Q" href="https://aisenwang.github.io/post/yocto%E5%B7%A5%E7%A8%8B%E8%AE%B0%E5%BD%95-nxpimx6q/"></a>
+  <footer class="entry-footer"><span title='2021-01-20 00:00:00 +0000 UTC'>January 20, 2021</span>&nbsp;·&nbsp;Aditya Telange</footer>
+  <a class="entry-link" aria-label="post link to Installation | Update" href="https://aisenwang.github.io/posts/papermod/papermod-installation/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2>Markdown_Grammer
+    <h2>Features
     </h2>
   </header>
   <div class="entry-content">
-    <p>菜单栏 文件：alt&#43;F 编辑：alt&#43;E 段落：alt&#43;P 格式：alt&#43;O 视图：alt&#43;V 主题：alt&#43;T 帮助：alt&#43;H
-文件 新建：Ctrl&#43;N 新建窗口：Ctrl&#43;Shift&#43;N 打开：Ctrl&#43;O 快速打开：Ctrl&#43;P 保存：Ctrl&#43;S 另存为：Ctrl&#43;Shift&#43;S 偏好：Ctrl&#43;, 关闭：Ctrl&#43;W
-编辑 撤销：Ctrl&#43;Z 重做：Ctrl&#43;Y 剪切：Ctrl&#43;X 复制：Ctrl&#43;C 粘贴：Ctrl&#43;V 复制为MarkDown：Ctrl&#43;Shift&#43;C 粘贴为纯文本：Ctrl&#43;Shift&#43;V 全选：Ctrl&#43;A 选中当前行/句：Ctrl&#43;L 选中当前格式文本：Ctrl&#43;E 选中当前词：Ctrl&#43;D 跳转到文首：Ctrl&#43;Home 跳转到所选内容：Ctrl&#43;J 跳转到文末：Ctrl&#43;End 查找：Ctrl&#43;F 查找下一个：F3 查找上一个：Shift&#43;F3 替换：Ctrl&#43;H
-段落 标题：Ctrl&#43;1/2/3/4/5 段落：Ctrl&#43;0
-增大标题级别：Ctrl&#43;=
-减少标题级别：Ctrl&#43;-
-表格：Ctrl&#43;T
-代码块：Ctrl&#43;Shift&#43;K
-公式块：Ctrl&#43;Shift&#43;M
-引用：Ctrl&#43;Shift&#43;Q
-有序列表：Ctrl&#43;Shift&#43;[
-无序列表：Ctrl&#43;Shift&#43;]
-增加缩进：Ctrl&#43;]
-减少缩进：Ctrl&#43;[
-格式 加粗：Ctrl&#43;B 斜体：Ctrl&#43;I 下划线：Ctrl&#43;U 代码：Ctrl&#43;Shift&#43;` 删除线：Alt&#43;Shift&#43;5 超链接：Ctrl&#43;K 图像：Ctrl&#43;Shift&#43;I 清除样式：Ctrl&#43;...</p>
+    <p>Learn About All Features in PaperMod</p>
   </div>
-  <footer class="entry-footer"><span title='2022-08-25 09:29:09 +0800 CST'>August 25, 2022</span></footer>
-  <a class="entry-link" aria-label="post link to Markdown_Grammer" href="https://aisenwang.github.io/post/markdown_grammer/"></a>
+  <footer class="entry-footer"><span title='2021-01-20 00:00:00 +0000 UTC'>January 20, 2021</span>&nbsp;·&nbsp;Aditya Telange</footer>
+  <a class="entry-link" aria-label="post link to Features" href="https://aisenwang.github.io/posts/papermod/papermod-features/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>FAQs<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Frequently Asked Questions</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-20 00:00:00 +0000 UTC'>January 20, 2021</span>&nbsp;·&nbsp;Aditya Telange</footer>
+  <a class="entry-link" aria-label="post link to FAQs" href="https://aisenwang.github.io/posts/papermod/papermod-faq/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Icons<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>List of all Icons supported by PaperMod</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-20 00:00:00 +0000 UTC'>January 20, 2021</span>&nbsp;·&nbsp;Aditya Telange</footer>
+  <a class="entry-link" aria-label="post link to Icons" href="https://aisenwang.github.io/posts/papermod/papermod-icons/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2>Variables | Front Matter<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>List of Front Matter variables used by PaperMod</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-01-20 00:00:00 +0000 UTC'>January 20, 2021</span>&nbsp;·&nbsp;Aditya Telange</footer>
+  <a class="entry-link" aria-label="post link to Variables | Front Matter" href="https://aisenwang.github.io/posts/papermod/papermod-variables/"></a>
 </article>
     </main>
     
