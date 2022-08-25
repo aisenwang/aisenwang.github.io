@@ -6,7 +6,30 @@
     <description>Recent content on Aisen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 25 Aug 2022 09:29:09 +0800</lastBuildDate><atom:link href="https://aisenwang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Aug 2022 09:49:33 +0800</lastBuildDate><atom:link href="https://aisenwang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yocto工程记录 NXPIMX6Q</title>
+      <link>https://aisenwang.github.io/post/yocto%E5%B7%A5%E7%A8%8B%E8%AE%B0%E5%BD%95-nxpimx6q/</link>
+      <pubDate>Thu, 25 Aug 2022 09:49:33 +0800</pubDate>
+      
+      <guid>https://aisenwang.github.io/post/yocto%E5%B7%A5%E7%A8%8B%E8%AE%B0%E5%BD%95-nxpimx6q/</guid>
+      <description>建立工作目录 新建文件夹作为工作空间，如imx-yocto-bsp-4.9.88
+将 /home/sbs/develop-source/sources-4.9.88-20210403.tar.gz 文件解压到 ~/imx-yocto-bsp-4.9.88 目录下
+将 /home/sbs/develop-source/downloads-4.9.88-20210201.tar.gz 文件解压到 ~/imx-yocto-bsp-4.9.88 目录下
+在 ~/imx-yocto-bsp-4.9.88 目录下新建两个连接文件：
+$ ln -s sources/meta-fsl-bsp-release/imx/tools/fsl-setup-release.sh fsl-setup-release.sh
+$ ln -s sources/base/setup-environment setup-environment
+建立工程目录 DISTRO=fsl-imx-x11 MACHINE=imx6qsabresd source fsl-setup-release.sh -b sevb3732 添加layer bitbake-layers add-layer meta-imx6q 编译系统 清理生成： bitbake fsl-image-qt5-validation-imx -c clean
+编译全部 ：bitbake fsl-image-qt5-validation-imx
+交叉编译链 生成交叉编译链： bitbake fsl-image-qt5-validation-imx -c populate_sdk
+初始化交叉编译： . /opt/fsl-imx-x11/4.9.88-2.0.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi
+内核配置 生成一个当前版本的内核源码和配置
+~/imx-yocto-bsp-4.9.88/imx6qsabresd-x11$ bitbake linux-imx -c cleansstate
+~/imx-yocto-bsp-4.9.88/imx6qsabresd-x11$ bitbake linux-imx -c merge_fragment
+启动内核配置工具
+~/imx-yocto-bsp-4.9.88/imx6qsabresd-x11$ bitbake linux-imx -c menuconfig</description>
+    </item>
+    
     <item>
       <title>Markdown_Grammer</title>
       <link>https://aisenwang.github.io/post/markdown_grammer/</link>
