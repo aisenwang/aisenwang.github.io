@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Aisen</title>
-    <link>https://aisenwang.github.io/</link>
-    <description>Recent content on Aisen</description>
+    <title>Posts on Aisen</title>
+    <link>https://aisenwang.github.io/post/</link>
+    <description>Recent content in Posts on Aisen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 25 Aug 2022 09:29:09 +0800</lastBuildDate><atom:link href="https://aisenwang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Aug 2022 09:29:09 +0800</lastBuildDate><atom:link href="https://aisenwang.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown_Grammer</title>
       <link>https://aisenwang.github.io/post/markdown_grammer/</link>
@@ -29,15 +29,6 @@
 减少缩进：Ctrl+[
 格式 加粗：Ctrl+B 斜体：Ctrl+I 下划线：Ctrl+U 代码：Ctrl+Shift+` 删除线：Alt+Shift+5 超链接：Ctrl+K 图像：Ctrl+Shift+I 清除样式：Ctrl+
 视图 显示隐藏侧边栏：Ctrl+Shift+L 大纲视图：Ctrl+Shift+1 文档列表视图：Ctrl+Shift+2 文件树视图：Ctrl+Shift+3 源代码模式：Ctrl+/ 专注模式：F8 打字机模式：F9 切换全屏：F11 实际大小：Ctrl+Shift+0 放大：Ctrl+Shift+= 缩小：Ctrl+Shift+- 应用内窗口切换：Ctrl+Tab 打开DevTools：Shift+F12</description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://aisenwang.github.io/posts/first/</link>
-      <pubDate>Wed, 24 Aug 2022 21:17:41 +0800</pubDate>
-      
-      <guid>https://aisenwang.github.io/posts/first/</guid>
-      <description>Bonjour </description>
     </item>
     
   </channel>
